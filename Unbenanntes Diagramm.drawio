@@ -1,9 +1,65 @@
 <mxfile host="app.diagrams.net" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:137.0) Gecko/20100101 Firefox/137.0" version="24.8.6">
   <diagram name="Seite-1" id="8o3e8oz9PjRMQeZAUads">
-    <mxGraphModel>
+    <mxGraphModel dx="724" dy="366" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="827" pageHeight="1169" math="0" shadow="0">
       <root>
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
+        <mxCell id="yBb20sgHKGb01LULrCSi-6" value="" style="rounded=0;whiteSpace=wrap;html=1;dashed=1;" vertex="1" parent="1">
+          <mxGeometry x="150" y="60" width="190" height="210" as="geometry" />
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-1" value="Frontend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="50" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-2" value="Backend" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="330" y="300" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-3" value="Datenbank&lt;br&gt;(Nutzerdaten, Kontostand)" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="570" y="280" width="110" height="90" as="geometry" />
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-4" value="Keycloak" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="185" y="200" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-5" value="&lt;div&gt;Datenbank&lt;/div&gt;&lt;div&gt;(Anmeldedaten)&lt;/div&gt;" style="shape=cylinder3;whiteSpace=wrap;html=1;boundedLbl=1;backgroundOutline=1;size=15;" vertex="1" parent="1">
+          <mxGeometry x="197.5" y="90" width="95" height="70" as="geometry" />
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-11" value="Token &lt;br&gt;erstellen/erhalten" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.388;entryY=1.002;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="yBb20sgHKGb01LULrCSi-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="320" as="sourcePoint" />
+            <mxPoint x="220" y="270" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-12" value="Anfrage/Antwort" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0;entryY=0.5;entryDx=0;entryDy=0;" edge="1" parent="1" target="yBb20sgHKGb01LULrCSi-2">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="170" y="330" as="sourcePoint" />
+            <mxPoint x="220" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-13" value="Daten &lt;br&gt;speichern/abrufen" style="endArrow=classic;startArrow=classic;html=1;rounded=0;entryX=0.017;entryY=0.561;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" target="yBb20sgHKGb01LULrCSi-3">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="450" y="330" as="sourcePoint" />
+            <mxPoint x="500" y="280" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-15" value="" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.5;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="yBb20sgHKGb01LULrCSi-4" target="yBb20sgHKGb01LULrCSi-5">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="197.5" y="220" as="sourcePoint" />
+            <mxPoint x="247.5" y="170" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-17" value="Daten speichern/abrufen" style="edgeLabel;html=1;align=center;verticalAlign=middle;resizable=0;points=[];" vertex="1" connectable="0" parent="yBb20sgHKGb01LULrCSi-15">
+          <mxGeometry x="0.0889" y="-1" relative="1" as="geometry">
+            <mxPoint as="offset" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-16" value="Token validieren" style="endArrow=classic;startArrow=classic;html=1;rounded=0;exitX=0.645;exitY=1.001;exitDx=0;exitDy=0;exitPerimeter=0;" edge="1" parent="1" source="yBb20sgHKGb01LULrCSi-6">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <mxPoint x="280" y="370" as="sourcePoint" />
+            <mxPoint x="330" y="320" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="yBb20sgHKGb01LULrCSi-18" value="Keycloak-Container" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="137.5" y="50" width="142.5" height="40" as="geometry" />
+        </mxCell>
       </root>
     </mxGraphModel>
   </diagram>
