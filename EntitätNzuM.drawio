@@ -5,22 +5,22 @@
         <mxCell id="0" />
         <mxCell id="1" parent="0" />
         <mxCell id="XKS4RShXIUA06M08qSKM-1" value="&lt;div align=&quot;left&quot;&gt;@OneToMany(mappedBy = &quot;paymentInfo&quot;, cascade = CascadeType.ALL, orphanRemoval = true)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @JsonIgnore&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;private List&amp;lt;User_PaymentInfo&amp;gt; user_PaymentInfo = new ArrayList&amp;lt;&amp;gt;();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="140" y="100" width="500" height="70" as="geometry" />
+          <mxGeometry x="140" y="100" width="630" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XKS4RShXIUA06M08qSKM-2" value="&lt;div align=&quot;left&quot;&gt;@Id&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @ManyToOne&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @JoinColumn(name = &quot;user_id&quot;, nullable = false)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;private User user;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;@Id&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @ManyToOne&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @JoinColumn(name = &quot;payment_info_id&quot;, nullable = false)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;private PaymentInfo paymentInfo;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;&lt;br&gt;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;@Column(nullable = false)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;private String paymentAddress = &quot;&quot;;&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="140" y="300" width="500" height="140" as="geometry" />
+          <mxGeometry x="140" y="280" width="630" height="140" as="geometry" />
         </mxCell>
         <mxCell id="XKS4RShXIUA06M08qSKM-3" value="&lt;div align=&quot;left&quot;&gt;@OneToMany(mappedBy = &quot;user&quot;, cascade = CascadeType.ALL, orphanRemoval = true)&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp; @JsonIgnore&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&amp;nbsp;&lt;/div&gt;&lt;div align=&quot;left&quot;&gt;private List&amp;lt;User_PaymentInfo&amp;gt; user_PaymentInfo = new ArrayList&amp;lt;&amp;gt;();&lt;/div&gt;" style="rounded=0;whiteSpace=wrap;html=1;align=left;" vertex="1" parent="1">
-          <mxGeometry x="140" y="200" width="500" height="70" as="geometry" />
+          <mxGeometry x="140" y="190" width="630" height="60" as="geometry" />
         </mxCell>
         <mxCell id="XKS4RShXIUA06M08qSKM-4" value="PaymentInfo.java" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="80" width="310" height="30" as="geometry" />
+          <mxGeometry x="200" y="80" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XKS4RShXIUA06M08qSKM-5" value="User_PaymentInfo.java" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="280" width="310" height="30" as="geometry" />
+          <mxGeometry x="200" y="260" width="310" height="30" as="geometry" />
         </mxCell>
         <mxCell id="XKS4RShXIUA06M08qSKM-6" value="User.java" style="rounded=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
-          <mxGeometry x="150" y="180" width="310" height="30" as="geometry" />
+          <mxGeometry x="200" y="170" width="310" height="30" as="geometry" />
         </mxCell>
       </root>
     </mxGraphModel>
